@@ -52,6 +52,9 @@ Plug 'tpope/vim-repeat'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+
+" Commentary
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 " Theme Configuration
