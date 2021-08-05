@@ -19,16 +19,14 @@ Plug 'dart-lang/dart-vim-plugin'
 " Pubspec Assist
 Plug 'f-person/pubspec-assist-nvim'
 
-" JavaScript
-Plug 'pangloss/vim-javascript'
-
-" TypeScript
+" Typescript
 Plug 'ianks/vim-tsx'
 Plug 'leafgarland/typescript-vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Theme
 Plug 'phanviet/vim-monokai-pro'
@@ -178,6 +176,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#right_sep=''
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#branch#enabled = 1
 " Webdevicons Plugin
 let g:webdevicons_enable_airline_statusline_fileformat_symbols = 0
 " NERDTree Plugin
@@ -187,13 +186,13 @@ let g:NERDTreeGitStatusWithFlags = 1
 let g:NERDTreeFileExtensionHighlightFullName = 1
 let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1
+let g:NERDTreeGitStatusUseNerdFonts = 1
 " Indent Guide Plugin
 let g:indent_guides_enable_on_vim_startup = 1
 " Dart Plugin
 let g:dart_format_on_save = 1
 let g:dartfmt_options = ['--fix', '--line-length 80']
-" JS Plugin
-let g:javascript_plugin_jsdoc = 1
+let g:NERDTreeGitStatusUseNerdFonts = 1
 
 " COC Extensions
 let g:coc_global_extensions = [
