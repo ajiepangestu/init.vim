@@ -165,6 +165,7 @@ let g:rainbow_conf = {
 	\		'nerdtree': 0,
 	\	}
 	\}
+
 " Airline Plugin
 let g:airline_left_sep = ""
 let g:airline_right_sep = ""
@@ -177,8 +178,10 @@ let g:airline#extensions#tabline#right_sep=''
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#branch#enabled = 1
+
 " Webdevicons Plugin
 let g:webdevicons_enable_airline_statusline_fileformat_symbols = 0
+
 " NERDTree Plugin
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
@@ -187,12 +190,13 @@ let g:NERDTreeFileExtensionHighlightFullName = 1
 let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1
 let g:NERDTreeGitStatusUseNerdFonts = 1
+
 " Indent Guide Plugin
 let g:indent_guides_enable_on_vim_startup = 1
+
 " Dart Plugin
 let g:dart_format_on_save = 1
 let g:dartfmt_options = ['--fix', '--line-length 80']
-let g:NERDTreeGitStatusUseNerdFonts = 1
 
 " COC Extensions
 let g:coc_global_extensions = [

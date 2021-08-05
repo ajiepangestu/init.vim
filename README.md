@@ -7,5 +7,5 @@ a NeoVIM Flutter Configuration
 - [vim-plug](https://github.com/junegunn/vim-plug) 
 - JS-doc
 	```
-		npm install -g jsdoc
+	npm install -g jsdoc
 	```
