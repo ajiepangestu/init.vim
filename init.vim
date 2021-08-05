@@ -19,7 +19,10 @@ Plug 'dart-lang/dart-vim-plugin'
 " Pubspec Assist
 Plug 'f-person/pubspec-assist-nvim'
 
-" Typescript
+" JavaScript
+Plug 'pangloss/vim-javascript'
+
+" TypeScript
 Plug 'ianks/vim-tsx'
 Plug 'leafgarland/typescript-vim'
 
@@ -189,6 +192,8 @@ let g:indent_guides_enable_on_vim_startup = 1
 " Dart Plugin
 let g:dart_format_on_save = 1
 let g:dartfmt_options = ['--fix', '--line-length 80']
+" JS Plugin
+let g:javascript_plugin_jsdoc = 1
 
 " COC Extensions
 let g:coc_global_extensions = [
