@@ -2,6 +2,7 @@ call plug#begin('~/.nvim/plugged')
 " File and folder management
 Plug 'preservim/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'PhilRunninger/nerdtree-visual-selection'
 
 " Snippets
 Plug 'SirVer/ultisnips'
