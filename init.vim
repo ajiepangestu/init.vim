@@ -27,8 +27,11 @@ Plug 'f-person/pubspec-assist-nvim'
 
 " Git
 Plug 'tpope/vim-fugitive'
-Plug 'vim-airline/vim-airline'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+
+" Statusline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Theme
 Plug 'phanviet/vim-monokai-pro'
@@ -168,17 +171,17 @@ let g:rainbow_conf = {
   \}
 
 " Airline Plugin
-let g:airline_left_sep = ""
-let g:airline_right_sep = ""
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
 let g:airline_section_y = ''
 let g:airline_section_z = '(%3p%%)%3l/%L:%3v'
 let g:airline_skip_empty_sections = 1
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#right_sep=''
-let g:airline#extensions#tabline#right_sep_alt=' '
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '\'
+let g:airline#extensions#tabline#right_sep=' '
+let g:airline#extensions#tabline#right_sep_alt=' '
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = ' '
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#hunks#enabled = 1
