@@ -1,4 +1,4 @@
-call plug#begin('~/AppData/Local/nvim/plugged')
+call plug#begin('~/.nvim/plugged')
 " File and folder management
 Plug 'preservim/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -76,7 +76,7 @@ set nohlsearch
 set smartcase
 set noswapfile
 set nobackup
-set undodir=~/AppData/Local/nvim-data/backup
+set undodir=~/.nvim/data/backup
 set undofile
 set incsearch
 set tabstop=2
