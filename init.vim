@@ -19,6 +19,9 @@ Plug 'dart-lang/dart-vim-plugin'
 " Golang
 Plug 'fatih/vim-go'
 
+" JavaScript
+Plug 'yuezk/vim-js'
+
 " Pubspec Assist
 Plug 'f-person/pubspec-assist-nvim'
 
