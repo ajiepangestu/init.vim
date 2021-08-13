@@ -16,12 +16,11 @@ Plug 'jiangmiao/auto-pairs'
 " Dart
 Plug 'dart-lang/dart-vim-plugin'
 
+" Golang
+Plug 'fatih/vim-go'
+
 " Pubspec Assist
 Plug 'f-person/pubspec-assist-nvim'
-
-" Typescript
-Plug 'ianks/vim-tsx'
-Plug 'leafgarland/typescript-vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -157,7 +156,7 @@ endif
 xmap <leader>a <Plug>(coc-codeaction-selected)
 nmap <leader>a <Plug>(coc-codeaction-selected)
 
-" Plugin Configuration
+" ==== Plugin Configuration ====
 " Indent Rainbow Plugin
 let g:rainbow_active = 1
 let g:rainbow_conf = {
@@ -181,6 +180,7 @@ let g:airline#extensions#tabline#left_alt_sep = '\'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#hunks#enabled = 1
+
 " Webdevicons Plugin
 let g:webdevicons_enable_airline_statusline_fileformat_symbols = 0
 
@@ -200,29 +200,22 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:dart_format_on_save = 1
 let g:dartfmt_options = ['--fix', '--line-length 80']
 
+" Disable vim-go :GoDef short cut (gd)
+let g:go_def_mapping_enabled = 0
+
 " COC Extensions
 let g:coc_global_extensions = [
   \ 'coc-snippets',
-  \ 'coc-tsserver',
   \ 'coc-eslint', 
   \ 'coc-prettier', 
   \ 'coc-json', 
   \ 'coc-flutter',
+	\ 'coc-go',
 	\ 'coc-bloc',
-  \ 'coc-snippets',
   \ 'coc-yaml',
-  \ 'coc-tslint-plugin',
-  \ 'coc-tsserver',
   \ 'coc-emmet',
   \ 'coc-css',
   \ 'coc-html',
   \ 'coc-json',
   \ ]
-
-" == AUTOCMD ==================================== 
-" by default .ts file are not identified as typescript and .tsx files are not
-" identified as typescript react file, so add following
-au BufNewFile,BufRead *.ts setlocal filetype=typescript
-au BufNewFile,BufRead *.tsx setlocal filetype=typescript.tsx
-" == AUTOCMD 
 
