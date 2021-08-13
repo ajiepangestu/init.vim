@@ -72,7 +72,6 @@ set noswapfile
 set nobackup
 set undodir=~/AppData/Local/nvim-data/backup
 set undofile
-set undofile
 set incsearch
 set tabstop=2
 set softtabstop=2 noexpandtab
@@ -160,10 +159,10 @@ nmap <leader>a <Plug>(coc-codeaction-selected)
 " Indent Rainbow Plugin
 let g:rainbow_active = 1
 let g:rainbow_conf = {
-	\	'separately': {
-	\		'nerdtree': 0,
-	\	}
-	\}
+  \ 'separately': {
+  \   'nerdtree': 0,
+  \  }
+  \}
 
 " Airline Plugin
 let g:airline_left_sep = ""
@@ -210,8 +209,8 @@ let g:coc_global_extensions = [
   \ 'coc-prettier', 
   \ 'coc-json', 
   \ 'coc-flutter',
-	\ 'coc-go',
-	\ 'coc-bloc',
+  \ 'coc-go',
+  \ 'coc-bloc',
   \ 'coc-yaml',
   \ 'coc-emmet',
   \ 'coc-css',
