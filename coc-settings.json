@@ -2,7 +2,6 @@
 	"diagnostic.checkCurrentLine": true,
 	"eslint.autoFixOnSave": true,
 	"eslint.codeActionsOnSave.mode": "all",
-	"flutter.sdk.path": "D:\\.apps\\.dev\\flutter",
 	"languageserver": {
 		"golang": {
 			"command": "gopls",
