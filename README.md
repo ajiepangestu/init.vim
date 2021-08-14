@@ -1,6 +1,9 @@
 # NeoVIM Configuration
 a NeoVIM Configuration
 
+![image](https://user-images.githubusercontent.com/10147928/129462212-c6cbba26-3c5b-48da-9753-ecbabbf2f7da.png)
+
+
 ## Supported Languages
 - JavaScript
 - Dart & Flutter
