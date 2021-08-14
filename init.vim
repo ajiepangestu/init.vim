@@ -26,6 +26,9 @@ Plug 'yuezk/vim-js'
 " Pubspec Assist
 Plug 'f-person/pubspec-assist-nvim'
 
+" Editor Configuration
+Plug 'editorconfig/editorconfig-vim'
+
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -206,6 +209,9 @@ let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 " Dart Plugin
 let g:dart_format_on_save = 1
 let g:dartfmt_options = ['--fix', '--line-length 80']
+
+" Editor Configuration Plugin
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
 " Disable vim-go :GoDef short cut (gd)
 let g:go_def_mapping_enabled = 0
