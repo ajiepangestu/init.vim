@@ -23,6 +23,9 @@ Plug 'fatih/vim-go'
 " JavaScript
 Plug 'yuezk/vim-js'
 
+" Markdown Preview
+Plug 'iamcco/markdown-preview.nvim'
+
 " Pubspec Assist
 Plug 'f-person/pubspec-assist-nvim'
 
@@ -201,6 +204,7 @@ let g:NERDTreeFileExtensionHighlightFullName = 1
 let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1
 let g:NERDTreeGitStatusUseNerdFonts = 1
+let g:NERDTreeGitStatusShowClean = 1
 
 " Indent Guide Plugin
 let g:indent_guides_enable_on_vim_startup = 1
@@ -230,5 +234,6 @@ let g:coc_global_extensions = [
   \ 'coc-css',
   \ 'coc-html',
   \ 'coc-json',
+  \ 'coc-markdownlint'
   \ ]
 

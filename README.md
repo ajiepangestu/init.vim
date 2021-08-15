@@ -1,12 +1,14 @@
 # NeoVIM Configuration
+
 a NeoVIM Configuration
 
 ![image](https://user-images.githubusercontent.com/10147928/129462212-c6cbba26-3c5b-48da-9753-ecbabbf2f7da.png)
 
-
 ## Plugin Supported
+
 - ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 - ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+- ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 - ![NodeJS](https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node.js&logoColor=white)
 - ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 - ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
@@ -16,11 +18,13 @@ a NeoVIM Configuration
 ## Requirement
 
 - [Neovim (v0.5)](https://github.com/neovim/neovim/releases/tag/v0.5.0) or newer
-- [vim-plug](https://github.com/junegunn/vim-plug) 
+- [vim-plug](https://github.com/junegunn/vim-plug)
 
 ## Editor Config
+
 ### JavaScript Standard
-```
+
+```editorconfig
 root = true
 
 [*]
@@ -39,7 +43,8 @@ indent_size = 2
 ```
 
 ### Flutter
-```
+
+```editorconfig
 root = true
 
 [*]
@@ -55,7 +60,8 @@ trim_trailing_whitespace = false
 ```
 
 ### Golang
-```
+
+```editorconfig
 root = true
 
 [*]
@@ -78,3 +84,4 @@ eclint_indent_style = unset
 [Dockerfile]
 indent_size = 4
 ```
+
