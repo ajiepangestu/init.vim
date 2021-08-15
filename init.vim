@@ -24,7 +24,7 @@ Plug 'fatih/vim-go'
 Plug 'yuezk/vim-js'
 
 " Markdown Preview
-Plug 'iamcco/markdown-preview.nvim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 " Pubspec Assist
 Plug 'f-person/pubspec-assist-nvim'
