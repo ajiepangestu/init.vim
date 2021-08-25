@@ -2,6 +2,7 @@
 	"diagnostic.checkCurrentLine": true,
 	"eslint.autoFixOnSave": true,
 	"eslint.codeActionsOnSave.mode": "all",
+	"yaml.format.enable": true,
 	"languageserver": {
 		"golang": {
 			"command": "gopls",
