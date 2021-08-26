@@ -23,6 +23,10 @@ Plug 'fatih/vim-go'
 " JavaScript
 Plug 'yuezk/vim-js'
 
+" Laravel
+Plug 'noahfrederick/vim-composer'
+Plug 'noahfrederick/vim-laravel'
+
 " Markdown Preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
@@ -234,6 +238,8 @@ let g:coc_global_extensions = [
   \ 'coc-css',
   \ 'coc-html',
   \ 'coc-json',
-  \ 'coc-markdownlint'
+  \ 'coc-markdownlint',
+  \ 'coc-blade-formatter',
+  \ 'coc-blade-linter'
   \ ]
 
