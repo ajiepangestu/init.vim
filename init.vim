@@ -24,6 +24,7 @@ Plug 'fatih/vim-go'
 Plug 'yuezk/vim-js'
 
 " Laravel
+Plug 'arnaud-lb/vim-php-namespace'
 Plug 'noahfrederick/vim-composer'
 Plug 'noahfrederick/vim-laravel'
 
