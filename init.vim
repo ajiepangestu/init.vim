@@ -41,7 +41,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Theme
-Plug 'phanviet/vim-monokai-pro'
+Plug 'ayu-theme/ayu-vim'
 
 " Term
 Plug 'caenrique/nvim-toggle-terminal'
@@ -72,10 +72,12 @@ call plug#end()
 
 " Theme Configuration
 syntax on
-colorscheme monokai_pro
+
+set termguicolors
+let ayucolor="dark"
+colorscheme ayu
 
 " VIM Configuration
-set termguicolors
 set noerrorbells
 set number
 set nowrap
