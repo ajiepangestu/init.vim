@@ -46,9 +46,6 @@ Plug 'ayu-theme/ayu-vim'
 " Term
 Plug 'caenrique/nvim-toggle-terminal'
 
-" Indent Guide
-Plug 'nathanaelkane/vim-indent-guides'
-
 " Devicons
 Plug 'ryanoasis/vim-devicons'
 
@@ -177,10 +174,10 @@ nmap <leader>a <Plug>(coc-codeaction-selected)
 " Indent Rainbow Plugin
 let g:rainbow_active = 1
 let g:rainbow_conf = {
-  \ 'separately': {
-  \   'nerdtree': 0,
-  \  }
-  \}
+    \ 'separately': {
+    \   'nerdtree': 0,
+    \  }
+    \}
 
 " Airline Plugin
 let g:airline_left_sep = ''
@@ -211,10 +208,6 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 let g:NERDTreeGitStatusUseNerdFonts = 1
 let g:NERDTreeGitStatusShowClean = 1
 
-" Indent Guide Plugin
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
-
 " Dart Plugin
 let g:dart_format_on_save = 1
 let g:dartfmt_options = ['--fix', '--line-length 80']
@@ -227,18 +220,19 @@ let g:go_def_mapping_enabled = 0
 
 " COC Extensions
 let g:coc_global_extensions = [
-  \ 'coc-snippets',
-  \ 'coc-eslint', 
-  \ 'coc-prettier', 
-  \ 'coc-json', 
-  \ 'coc-flutter',
-  \ 'coc-go',
-  \ 'coc-bloc',
-  \ 'coc-yaml',
-  \ 'coc-emmet',
-  \ 'coc-css',
-  \ 'coc-html',
-  \ 'coc-json',
-  \ 'coc-markdownlint'
-  \ ]
+    \ 'coc-snippets',
+    \ 'coc-eslint',
+    \ 'coc-prettier',
+    \ 'coc-json',
+    \ 'coc-flutter',
+    \ 'coc-go',
+    \ 'coc-bloc',
+    \ 'coc-yaml',
+    \ 'coc-emmet',
+    \ 'coc-css',
+    \ 'coc-html',
+    \ 'coc-json',
+    \ 'coc-markdownlint',
+    \ 'coc-python'
+    \ ]
 
