@@ -34,7 +34,7 @@ Plug 'editorconfig/editorconfig-vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Statusline
 Plug 'vim-airline/vim-airline'
@@ -47,7 +47,7 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'caenrique/nvim-toggle-terminal'
 
 " Devicons
-Plug 'ryanoasis/vim-devicons'
+" Plug 'ryanoasis/vim-devicons'
 
 " Rainbow Parentheses
 Plug 'luochen1990/rainbow'
@@ -61,6 +61,7 @@ Plug 'tpope/vim-repeat'
 " Telescope
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-telescope/telescope.nvim'
 
 " Commentary
@@ -97,6 +98,9 @@ let mapleader=" "
 
 " Move to Normal Mode
 inoremap <silent>jj <Esc>
+
+" Save
+nnoremap <silent> <leader>w :w<Enter>
 
 " Move Split Window
 map <silent> <leader>h :wincmd h <CR>
@@ -196,7 +200,7 @@ let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#hunks#enabled = 1
 
 " Webdevicons Plugin
-let g:webdevicons_enable_airline_statusline_fileformat_symbols = 0
+" let g:webdevicons_enable_airline_statusline_fileformat_symbols = 0
 
 " NERDTree Plugin
 let g:NERDTreeDirArrowExpandable = '▸'
