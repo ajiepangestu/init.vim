@@ -88,15 +88,18 @@ set nobackup
 set undodir=~/.nvim/data/backup
 set undofile
 set incsearch
-set tabstop=2
-set softtabstop=2 noexpandtab
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
+set expandtab
 set clipboard=unnamedplus
 set backspace=indent,eol,start
 set encoding=UTF-8
 
 " Keymap
-let mapleader=";"
+let mapleader=" "
+
+" Move to Normal Mode
+inoremap <silent>jj <Esc>
 
 " Move Split Window
 map <silent> <leader>h :wincmd h <CR>
