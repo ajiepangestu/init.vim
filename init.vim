@@ -23,6 +23,10 @@ Plug 'fatih/vim-go'
 " JavaScript
 Plug 'yuezk/vim-js'
 
+" Python
+Plug 'vim-python/python-syntax'
+Plug 'sansyrox/vim-python-virtualenv'
+
 " Markdown Preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
@@ -34,23 +38,26 @@ Plug 'editorconfig/editorconfig-vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
-" Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Statusline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Theme
-Plug 'ayu-theme/ayu-vim'
+Plug 'phanviet/vim-monokai-pro'
 
 " Term
 Plug 'caenrique/nvim-toggle-terminal'
 
 " Devicons
-" Plug 'ryanoasis/vim-devicons'
+Plug 'ryanoasis/vim-devicons'
 
 " Rainbow Parentheses
 Plug 'luochen1990/rainbow'
+
+" Indent Guide
+Plug 'Yggdroot/indentLine'
 
 " Surround
 Plug 'tpope/vim-surround'
@@ -66,19 +73,19 @@ Plug 'nvim-telescope/telescope.nvim'
 
 " Commentary
 Plug 'tpope/vim-commentary'
+
 call plug#end()
 
 " Theme Configuration
 syntax on
 
 set termguicolors
-let ayucolor="dark"
-colorscheme ayu
+colorscheme monokai_pro
 
 " VIM Configuration
 set noerrorbells
 set number
-set nowrap
+set wrap linebreak
 set nohlsearch
 set smartcase
 set noswapfile
@@ -174,6 +181,11 @@ endif
 xmap <leader>a <Plug>(coc-codeaction-selected)
 nmap <leader>a <Plug>(coc-codeaction-selected)
 
+" Select 
+nmap <silent> <C-c> <Plug>(coc-cursors-position)
+nmap <silent> <C-d> <Plug>(coc-cursors-word)
+xmap <silent> <C-d> <Plug>(coc-cursors-range)
+
 " ==== Plugin Configuration ====
 " Indent Rainbow Plugin
 let g:rainbow_active = 1
@@ -200,7 +212,8 @@ let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#hunks#enabled = 1
 
 " Webdevicons Plugin
-" let g:webdevicons_enable_airline_statusline_fileformat_symbols = 0
+let g:webdevicons_enable_airline_statusline_fileformat_symbols = 0
+let g:airline_powerline_fonts = 1
 
 " NERDTree Plugin
 let g:NERDTreeDirArrowExpandable = '▸'
@@ -215,6 +228,9 @@ let g:NERDTreeGitStatusShowClean = 1
 " Dart Plugin
 let g:dart_format_on_save = 1
 let g:dartfmt_options = ['--fix', '--line-length 80']
+
+" Python Syntax Highlighting
+let g:python_highlight_all = 1
 
 " Editor Configuration Plugin
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
@@ -237,6 +253,5 @@ let g:coc_global_extensions = [
     \ 'coc-html',
     \ 'coc-json',
     \ 'coc-markdownlint',
-    \ 'coc-python'
+    \ 'coc-pyright'
     \ ]
-
