@@ -74,6 +74,9 @@ Plug 'nvim-telescope/telescope.nvim'
 " Commentary
 Plug 'tpope/vim-commentary'
 
+" Multi Cursor
+"Plug 'terryma/vim-multiple-cursors'
+
 call plug#end()
 
 " Theme Configuration
