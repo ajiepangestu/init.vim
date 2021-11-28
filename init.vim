@@ -39,6 +39,7 @@ Plug 'editorconfig/editorconfig-vim'
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'APZelos/blamer.nvim'
 
 " Statusline
 Plug 'vim-airline/vim-airline'
@@ -190,6 +191,11 @@ nmap <silent> <C-d> <Plug>(coc-cursors-word)
 xmap <silent> <C-d> <Plug>(coc-cursors-range)
 
 " ==== Plugin Configuration ====
+
+" Git Blamer
+let g:blamer_enabled = 1
+let g:blamer_delay = 500
+
 " Indent Rainbow Plugin
 let g:rainbow_active = 1
 let g:rainbow_conf = {
@@ -219,6 +225,7 @@ let g:webdevicons_enable_airline_statusline_fileformat_symbols = 0
 let g:airline_powerline_fonts = 1
 
 " NERDTree Plugin
+let g:NERDTreeMinimalUI=1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 let g:NERDTreeGitStatusWithFlags = 1
