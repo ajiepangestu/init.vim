@@ -40,6 +40,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'APZelos/blamer.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'sindrets/diffview.nvim'
 
 " Statusline
 Plug 'vim-airline/vim-airline'
@@ -75,6 +77,8 @@ Plug 'nvim-telescope/telescope.nvim'
 " Commentary
 Plug 'tpope/vim-commentary'
 
+Plug 'patstockwell/vim-monokai-tasty'
+
 " Multi Cursor
 "Plug 'terryma/vim-multiple-cursors'
 
@@ -84,7 +88,7 @@ call plug#end()
 syntax on
 
 set termguicolors
-colorscheme monokai_pro
+colorscheme vim-monokai-tasty
 
 " VIM Configuration
 set noerrorbells
